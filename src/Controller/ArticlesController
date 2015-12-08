@@ -1,0 +1,9 @@
+namespace App\Controller;
+class ArticlesCoontroller extends AppController
+{
+	public function index()
+	{
+		$articles=$this->Articles->find('all');
+		$this->set(compact('articles'));
+	}
+}

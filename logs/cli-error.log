@@ -1,0 +1,37 @@
+2015-12-07 08:34:40 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'myblog.categories' doesn't exist
+Stack Trace:
+#0 C:\xampp\htdocs\lab5\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(96): Cake\Database\Schema\Collection->_reflect('Column', 'categories', Array, Object(Cake\Database\Schema\Table))
+#1 C:\xampp\htdocs\lab5\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(64): Cake\Database\Schema\Collection->describe('categories', Array)
+#2 C:\xampp\htdocs\lab5\vendor\cakephp\cakephp\src\ORM\Table.php(423): Cake\Database\Schema\CachedCollection->describe('categories')
+#3 C:\xampp\htdocs\lab5\vendor\cakephp\cakephp\src\ORM\Table.php(499): Cake\ORM\Table->schema()
+#4 C:\xampp\htdocs\lab5\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(194): Cake\ORM\Table->primaryKey()
+#5 C:\xampp\htdocs\lab5\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(110): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#6 C:\xampp\htdocs\lab5\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(96): Bake\Shell\Task\ModelTask->bake('Categories')
+#7 [internal function]: Bake\Shell\Task\ModelTask->main('Categories')
+#8 C:\xampp\htdocs\lab5\vendor\cakephp\cakephp\src\Console\Shell.php(447): call_user_func_array(Array, Array)
+#9 C:\xampp\htdocs\lab5\vendor\cakephp\cakephp\src\Console\Shell.php(442): Cake\Console\Shell->runCommand(Array, false)
+#10 C:\xampp\htdocs\lab5\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(212): Cake\Console\Shell->runCommand(Array, true, Array)
+#11 C:\xampp\htdocs\lab5\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(179): Cake\Console\ShellDispatcher->_dispatch(Array)
+#12 C:\xampp\htdocs\lab5\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(126): Cake\Console\ShellDispatcher->dispatch(Array)
+#13 C:\xampp\htdocs\lab5\bin\cake.php(33): Cake\Console\ShellDispatcher::run(Array)
+#14 {main}
+
+
+2015-12-07 08:35:09 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'myblog.categories' doesn't exist
+Stack Trace:
+#0 C:\xampp\htdocs\lab5\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(96): Cake\Database\Schema\Collection->_reflect('Column', 'categories', Array, Object(Cake\Database\Schema\Table))
+#1 C:\xampp\htdocs\lab5\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(64): Cake\Database\Schema\Collection->describe('categories', Array)
+#2 C:\xampp\htdocs\lab5\vendor\cakephp\cakephp\src\ORM\Table.php(423): Cake\Database\Schema\CachedCollection->describe('categories')
+#3 C:\xampp\htdocs\lab5\vendor\cakephp\cakephp\src\ORM\Table.php(499): Cake\ORM\Table->schema()
+#4 C:\xampp\htdocs\lab5\vendor\cakephp\bake\src\Shell\Task\TemplateTask.php(284): Cake\ORM\Table->primaryKey()
+#5 C:\xampp\htdocs\lab5\vendor\cakephp\bake\src\Shell\Task\TemplateTask.php(147): Bake\Shell\Task\TemplateTask->_loadController()
+#6 [internal function]: Bake\Shell\Task\TemplateTask->main('Categories')
+#7 C:\xampp\htdocs\lab5\vendor\cakephp\cakephp\src\Console\Shell.php(447): call_user_func_array(Array, Array)
+#8 C:\xampp\htdocs\lab5\vendor\cakephp\cakephp\src\Console\Shell.php(442): Cake\Console\Shell->runCommand(Array, false)
+#9 C:\xampp\htdocs\lab5\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(212): Cake\Console\Shell->runCommand(Array, true, Array)
+#10 C:\xampp\htdocs\lab5\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(179): Cake\Console\ShellDispatcher->_dispatch(Array)
+#11 C:\xampp\htdocs\lab5\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(126): Cake\Console\ShellDispatcher->dispatch(Array)
+#12 C:\xampp\htdocs\lab5\bin\cake.php(33): Cake\Console\ShellDispatcher::run(Array)
+#13 {main}
+
+
