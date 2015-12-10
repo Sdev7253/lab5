@@ -29,9 +29,6 @@ class ArticlesTable extends Table
         $this->primaryKey('id');
 
         $this->addBehavior('Timestamp');
-		$this->belongsTo('Categories', [
-            'foreignKey' => 'category_id',
-        ]);
 
     }
 
@@ -44,16 +41,29 @@ class ArticlesTable extends Table
     public function validationDefault(Validator $validator)
     {
         $validator
-            ->add('id', 'valid', ['rule' => 'numeric'])
-            ->allowEmpty('id', 'create');
+            ->add('articleID', 'valid', ['rule' => 'numeric'])
+            ->allowEmpty('articleID', 'create');
 
         $validator
-            ->requirePresence('title', 'create')
-            ->notEmpty('title');
+            ->allowEmpty('title');
 
         $validator
-            ->requirePresence('body', 'create')
-            ->notEmpty('body');
+            ->allowEmpty('body');
+
+        $validator
+            ->add('userID', 'valid', ['rule' => 'numeric'])
+            ->requirePresence('userID', 'create')
+            ->notEmpty('userID');
+
+        $validator
+            ->add('tagID', 'valid', ['rule' => 'numeric'])
+            ->requirePresence('tagID', 'create')
+            ->notEmpty('tagID');
+
+        $validator
+            ->add('commentID', 'valid', ['rule' => 'numeric'])
+            ->requirePresence('commentID', 'create')
+            ->notEmpty('commentID');
 
         return $validator;
     }

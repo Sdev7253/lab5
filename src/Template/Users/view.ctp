@@ -23,16 +23,20 @@
             <td><?= h($user->role) ?></td>
         </tr>
         <tr>
-            <th><?= __('Id') ?></th>
-            <td><?= $this->Number->format($user->id) ?></td>
+            <th><?= __('UserID') ?></th>
+            <td><?= $this->Number->format($user->userID) ?></td>
+        </tr>
+        <tr>
+            <th><?= __('ArticleID') ?></th>
+            <td><?= $this->Number->format($user->articleID) ?></td>
+        </tr>
+        <tr>
+            <th><?= __('CommentID') ?></th>
+            <td><?= $this->Number->format($user->commentID) ?></td>
         </tr>
         <tr>
             <th><?= __('Created') ?></th>
             <td><?= h($user->created) ?></tr>
-        </tr>
-        <tr>
-            <th><?= __('Modified') ?></th>
-            <td><?= h($user->modified) ?></tr>
         </tr>
     </table>
 </div>

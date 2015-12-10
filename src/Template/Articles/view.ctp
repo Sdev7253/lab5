@@ -15,8 +15,20 @@
             <td><?= h($article->title) ?></td>
         </tr>
         <tr>
-            <th><?= __('Id') ?></th>
-            <td><?= $this->Number->format($article->id) ?></td>
+            <th><?= __('ArticleID') ?></th>
+            <td><?= $this->Number->format($article->articleID) ?></td>
+        </tr>
+        <tr>
+            <th><?= __('UserID') ?></th>
+            <td><?= $this->Number->format($article->userID) ?></td>
+        </tr>
+        <tr>
+            <th><?= __('TagID') ?></th>
+            <td><?= $this->Number->format($article->tagID) ?></td>
+        </tr>
+        <tr>
+            <th><?= __('CommentID') ?></th>
+            <td><?= $this->Number->format($article->commentID) ?></td>
         </tr>
         <tr>
             <th><?= __('Created') ?></th>

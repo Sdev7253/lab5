@@ -9,8 +9,12 @@
     <fieldset>
         <legend><?= __('Add Article') ?></legend>
         <?php
+            echo $this->Form->input('articleID');
             echo $this->Form->input('title');
             echo $this->Form->input('body');
+            echo $this->Form->input('userID');
+            echo $this->Form->input('tagID');
+            echo $this->Form->input('commentID');
         ?>
     </fieldset>
     <?= $this->Form->button(__('Submit')) ?>

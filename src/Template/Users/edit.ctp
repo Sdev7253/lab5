@@ -15,9 +15,12 @@
     <fieldset>
         <legend><?= __('Edit User') ?></legend>
         <?php
+            echo $this->Form->input('userID');
             echo $this->Form->input('username');
             echo $this->Form->input('password');
             echo $this->Form->input('role');
+            echo $this->Form->input('articleID');
+            echo $this->Form->input('commentID');
         ?>
     </fieldset>
     <?= $this->Form->button(__('Submit')) ?>

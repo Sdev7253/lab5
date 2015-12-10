@@ -6,11 +6,15 @@ use Cake\ORM\Entity;
 /**
  * Article Entity.
  *
- * @property int $id
+ * @property int $articleID
  * @property string $title
  * @property string $body
  * @property \Cake\I18n\Time $created
  * @property \Cake\I18n\Time $modified
+ * @property int $userID
+ * @property int $tagID
+ * @property int $commentID
+ * @property \App\Model\Entity\Category $category
  */
 class Article extends Entity
 {

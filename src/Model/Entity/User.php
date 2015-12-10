@@ -6,12 +6,13 @@ use Cake\ORM\Entity;
 /**
  * User Entity.
  *
- * @property int $id
+ * @property int $userID
  * @property string $username
  * @property string $password
  * @property string $role
+ * @property int $articleID
+ * @property int $commentID
  * @property \Cake\I18n\Time $created
- * @property \Cake\I18n\Time $modified
  */
 class User extends Entity
 {

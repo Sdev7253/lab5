@@ -9,20 +9,26 @@
     <table cellpadding="0" cellspacing="0">
         <thead>
             <tr>
-                <th><?= $this->Paginator->sort('id') ?></th>
+                <th><?= $this->Paginator->sort('articleID') ?></th>
                 <th><?= $this->Paginator->sort('title') ?></th>
                 <th><?= $this->Paginator->sort('created') ?></th>
                 <th><?= $this->Paginator->sort('modified') ?></th>
+                <th><?= $this->Paginator->sort('userID') ?></th>
+                <th><?= $this->Paginator->sort('tagID') ?></th>
+                <th><?= $this->Paginator->sort('commentID') ?></th>
                 <th class="actions"><?= __('Actions') ?></th>
             </tr>
         </thead>
         <tbody>
             <?php foreach ($articles as $article): ?>
             <tr>
-                <td><?= $this->Number->format($article->id) ?></td>
+                <td><?= $this->Number->format($article->articleID) ?></td>
                 <td><?= h($article->title) ?></td>
                 <td><?= h($article->created) ?></td>
                 <td><?= h($article->modified) ?></td>
+                <td><?= $this->Number->format($article->userID) ?></td>
+                <td><?= $this->Number->format($article->tagID) ?></td>
+                <td><?= $this->Number->format($article->commentID) ?></td>
                 <td class="actions">
                     <?= $this->Html->link(__('View'), ['action' => 'view', $article->id]) ?>
                     <?= $this->Html->link(__('Edit'), ['action' => 'edit', $article->id]) ?>

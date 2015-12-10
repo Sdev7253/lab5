@@ -41,8 +41,8 @@ class UsersTable extends Table
     public function validationDefault(Validator $validator)
     {
         $validator
-            ->add('id', 'valid', ['rule' => 'numeric'])
-            ->allowEmpty('id', 'create');
+            ->add('userID', 'valid', ['rule' => 'numeric'])
+            ->allowEmpty('userID', 'create');
 
         $validator
             ->allowEmpty('username');
@@ -52,6 +52,14 @@ class UsersTable extends Table
 
         $validator
             ->allowEmpty('role');
+
+        $validator
+            ->add('articleID', 'valid', ['rule' => 'numeric'])
+            ->allowEmpty('articleID');
+
+        $validator
+            ->add('commentID', 'valid', ['rule' => 'numeric'])
+            ->allowEmpty('commentID');
 
         return $validator;
     }
