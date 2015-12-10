@@ -149,3 +149,55 @@ Stack Trace:
 #1 {main}
 
 
+2015-12-10 09:16:16 Error: [InvalidArgumentException] Articles is not associated with Categories
+Request URL: /lab5/articles
+Stack Trace:
+#0 C:\xampp\htdocs\lab5\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(250): Cake\ORM\EagerLoader->_normalizeContain(Object(App\Model\Table\ArticlesTable), 'Categories', Array, Array)
+#1 C:\xampp\htdocs\lab5\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(358): Cake\ORM\EagerLoader->normalized(Object(App\Model\Table\ArticlesTable))
+#2 C:\xampp\htdocs\lab5\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(337): Cake\ORM\EagerLoader->attachableAssociations(Object(App\Model\Table\ArticlesTable))
+#3 C:\xampp\htdocs\lab5\vendor\cakephp\cakephp\src\ORM\Query.php(872): Cake\ORM\EagerLoader->attachAssociations(Object(Cake\ORM\Query), Object(App\Model\Table\ArticlesTable), true)
+#4 C:\xampp\htdocs\lab5\vendor\cakephp\cakephp\src\ORM\Query.php(828): Cake\ORM\Query->_transformQuery()
+#5 C:\xampp\htdocs\lab5\vendor\cakephp\cakephp\src\Database\Driver\Mysql.php(121): Cake\ORM\Query->sql()
+#6 C:\xampp\htdocs\lab5\vendor\cakephp\cakephp\src\Database\Connection.php(216): Cake\Database\Driver\Mysql->prepare(Object(Cake\ORM\Query))
+#7 C:\xampp\htdocs\lab5\vendor\cakephp\cakephp\src\Database\Connection.php(268): Cake\Database\Connection->prepare(Object(Cake\ORM\Query))
+#8 C:\xampp\htdocs\lab5\vendor\cakephp\cakephp\src\Database\Query.php(174): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#9 C:\xampp\htdocs\lab5\vendor\cakephp\cakephp\src\ORM\Query.php(847): Cake\Database\Query->execute()
+#10 C:\xampp\htdocs\lab5\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(272): Cake\ORM\Query->_execute()
+#11 C:\xampp\htdocs\lab5\vendor\cakephp\cakephp\src\ORM\Query.php(798): Cake\ORM\Query->_all()
+#12 C:\xampp\htdocs\lab5\vendor\cakephp\cakephp\src\Controller\Component\PaginatorComponent.php(171): Cake\ORM\Query->all()
+#13 C:\xampp\htdocs\lab5\vendor\cakephp\cakephp\src\Controller\Controller.php(688): Cake\Controller\Component\PaginatorComponent->paginate(Object(App\Model\Table\ArticlesTable), Array)
+#14 C:\xampp\htdocs\lab5\src\Controller\ArticlesController.php(24): Cake\Controller\Controller->paginate(Object(App\Model\Table\ArticlesTable))
+#15 [internal function]: App\Controller\ArticlesController->index()
+#16 C:\xampp\htdocs\lab5\vendor\cakephp\cakephp\src\Controller\Controller.php(429): call_user_func_array(Array, Array)
+#17 C:\xampp\htdocs\lab5\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#18 C:\xampp\htdocs\lab5\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\ArticlesController))
+#19 C:\xampp\htdocs\lab5\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#20 {main}
+
+
+2015-12-10 09:18:04 Error: [InvalidArgumentException] Articles is not associated with Categories
+Request URL: /lab5/articles
+Stack Trace:
+#0 C:\xampp\htdocs\lab5\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(250): Cake\ORM\EagerLoader->_normalizeContain(Object(App\Model\Table\ArticlesTable), 'Categories', Array, Array)
+#1 C:\xampp\htdocs\lab5\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(358): Cake\ORM\EagerLoader->normalized(Object(App\Model\Table\ArticlesTable))
+#2 C:\xampp\htdocs\lab5\vendor\cakephp\cakephp\src\ORM\EagerLoader.php(337): Cake\ORM\EagerLoader->attachableAssociations(Object(App\Model\Table\ArticlesTable))
+#3 C:\xampp\htdocs\lab5\vendor\cakephp\cakephp\src\ORM\Query.php(872): Cake\ORM\EagerLoader->attachAssociations(Object(Cake\ORM\Query), Object(App\Model\Table\ArticlesTable), true)
+#4 C:\xampp\htdocs\lab5\vendor\cakephp\cakephp\src\ORM\Query.php(828): Cake\ORM\Query->_transformQuery()
+#5 C:\xampp\htdocs\lab5\vendor\cakephp\cakephp\src\Database\Driver\Mysql.php(121): Cake\ORM\Query->sql()
+#6 C:\xampp\htdocs\lab5\vendor\cakephp\cakephp\src\Database\Connection.php(216): Cake\Database\Driver\Mysql->prepare(Object(Cake\ORM\Query))
+#7 C:\xampp\htdocs\lab5\vendor\cakephp\cakephp\src\Database\Connection.php(268): Cake\Database\Connection->prepare(Object(Cake\ORM\Query))
+#8 C:\xampp\htdocs\lab5\vendor\cakephp\cakephp\src\Database\Query.php(174): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#9 C:\xampp\htdocs\lab5\vendor\cakephp\cakephp\src\ORM\Query.php(847): Cake\Database\Query->execute()
+#10 C:\xampp\htdocs\lab5\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(272): Cake\ORM\Query->_execute()
+#11 C:\xampp\htdocs\lab5\vendor\cakephp\cakephp\src\ORM\Query.php(798): Cake\ORM\Query->_all()
+#12 C:\xampp\htdocs\lab5\vendor\cakephp\cakephp\src\Controller\Component\PaginatorComponent.php(171): Cake\ORM\Query->all()
+#13 C:\xampp\htdocs\lab5\vendor\cakephp\cakephp\src\Controller\Controller.php(688): Cake\Controller\Component\PaginatorComponent->paginate(Object(App\Model\Table\ArticlesTable), Array)
+#14 C:\xampp\htdocs\lab5\src\Controller\ArticlesController.php(24): Cake\Controller\Controller->paginate(Object(App\Model\Table\ArticlesTable))
+#15 [internal function]: App\Controller\ArticlesController->index()
+#16 C:\xampp\htdocs\lab5\vendor\cakephp\cakephp\src\Controller\Controller.php(429): call_user_func_array(Array, Array)
+#17 C:\xampp\htdocs\lab5\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#18 C:\xampp\htdocs\lab5\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\ArticlesController))
+#19 C:\xampp\htdocs\lab5\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#20 {main}
+
+

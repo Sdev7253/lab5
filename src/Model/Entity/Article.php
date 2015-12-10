@@ -14,7 +14,6 @@ use Cake\ORM\Entity;
  * @property int $userID
  * @property int $tagID
  * @property int $commentID
- * @property \App\Model\Entity\Category $category
  */
 class Article extends Entity
 {
