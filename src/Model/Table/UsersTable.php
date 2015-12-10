@@ -40,14 +40,28 @@ class UsersTable extends Table
      */
     public function validationDefault(Validator $validator)
     {
-        return $validator
-            ->notEmpty('username', 'A username is required')
-            ->notEmpty('password', 'A password is required')
-            ->notEmpty('role', 'A role is required')
-            ->add('role', 'inList', [
-                'rule' => ['inList', ['admin', 'author']],
-                'message' => 'Please enter a valid role'
-            ]);
+        $validator
+            ->add('userID', 'valid', ['rule' => 'numeric'])
+            ->allowEmpty('userID', 'create');
+
+        $validator
+            ->allowEmpty('username');
+
+        $validator
+            ->allowEmpty('password');
+
+        $validator
+            ->allowEmpty('role');
+
+        $validator
+            ->add('articleID', 'valid', ['rule' => 'numeric'])
+            ->allowEmpty('articleID');
+
+        $validator
+            ->add('commentID', 'valid', ['rule' => 'numeric'])
+            ->allowEmpty('commentID');
+
+        return $validator;
     }
 
     /**
